@@ -1,0 +1,21 @@
+To get started run the following SQL commands:
+
+CREATE DATABASE shoppingcart;
+
+USE misc; (Or select misc in phpMyAdmin)
+
+CREATE TABLE cart (
+   cart_id INTEGER NOT NULL
+     AUTO_INCREMENT KEY,
+   item VARCHAR(128),
+   type VARCHAR(128),
+   qty VARCHAR(128),
+) ENGINE=InnoDB CHARSET=utf8;
+
+Initialize table to see list of items
+
+INSERT INTO cart 
+VALUES(White Shirt, Clothing, 1);
+VALUES(Blue shirt, Clothing, 3);
+VALUES(Black Shoes, Shoes, 2);
+
